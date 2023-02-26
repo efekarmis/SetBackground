@@ -1,0 +1,104 @@
+:root{
+    --backgroundColor:rgba(80,90,140)
+}
+html{
+    width: 100%;
+    height: 100%;
+}
+body{
+    background-color: var(--backgroundColor);
+    font-size: 16px;
+    font-family: monospace;
+    box-sizing: content-box;
+    width: 100%;
+    height: 100%;
+}
+.panel{
+    width: 100;
+    height: 100vh;
+    position: relative;
+    display: block;
+}
+.panel__items{
+    width: 24rem;
+
+    position: absolute;
+    top: 2%;
+    left: 50%;
+    transform: translate(-50%);
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.valueColors{
+    display: flex;
+    justify-content: space-around;
+    gap: 1rem;
+}
+.valueColors input{
+    width: 7rem;
+    height: 2rem;
+    padding: 0 0.4rem;
+    box-sizing: border-box;
+    font-size: 14px;
+    color: #222;
+}
+.setRed{
+    height: 2rem;
+}
+.setRed input{
+    border-radius: 5px;
+}
+.setRed input::-webkit-input-placeholder{
+    color: red;
+}
+.setGreen{
+    height: 2rem;
+}
+.setGreen input{
+    border-radius: 5px;
+}
+.setGreen input::-webkit-input-placeholder{
+    color: green;
+}
+.setBlue{
+    height: 2rem;
+}
+.setBlue input{
+    border-radius: 5px;
+}
+.setBlue input::-webkit-input-placeholder{
+    color: blue;
+}
+.set-bg{
+    width: 15rem;
+    height: 2.5rem;
+    transform: scale(1.01);
+    transition: all .2s ease;
+    border: 2px solid #fff;
+}
+
+.set-bg:active{
+    transform: scale(0.95);
+}
+
+/* Button Panel Part */
+.buttonPanel{
+    width: 100%;
+    font-size: 12px;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    border: 2px solid black;
+    border-radius: 1.2rem;
+}
+.buttonPanel__items{
+    display: inline-grid;
+    grid-template-columns: auto auto auto auto auto;
+    row-gap: 1rem;
+    column-gap: 0.75rem;
+    margin: 2rem 0;
+    
+}
